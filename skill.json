@@ -1,0 +1,38 @@
+{
+  "name": "genpark-personal-context-memory-graph-synthesizer-skill",
+  "version": "1.0.0",
+  "description": "GenPark AI Agent Skill - Cross-platform personal episodic memory and context graph synthesizer compiling recency-decayed briefings for interactions.",
+  "homepage": "https://genpark.ai/mcp",
+  "author": "alphaparkinc",
+  "category": "personal-knowledge",
+  "tags": [
+    "personal-agent",
+    "memory-graph",
+    "context-synthesis",
+    "pre-meeting-briefing",
+    "episodic-memory"
+  ],
+  "inputs": {
+    "target_entity": {
+      "type": "string",
+      "default": "Dr. Julian Vance"
+    },
+    "interaction_context": {
+      "type": "string",
+      "default": "Upcoming Partnership Strategy Call"
+    }
+  },
+  "outputs": {
+    "synthesis_id": {
+      "type": "string"
+    },
+    "aggregate_salience_score": {
+      "type": "number"
+    },
+    "executive_pre_briefing": {
+      "type": "array"
+    }
+  },
+  "entrypoint": "client.py",
+  "example": "example_usage.py"
+}
